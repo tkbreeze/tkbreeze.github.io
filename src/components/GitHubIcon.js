@@ -5,7 +5,7 @@ const GitHubIcon = ({ url }) => (
     href={url}
     target="_blank"
     rel="noopener noreferrer"
-    className="inline-block p-2 text-gray-500 hover:text-black"
+    className="inline-block p-1 hover:text-black"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
