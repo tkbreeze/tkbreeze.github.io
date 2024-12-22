@@ -1,0 +1,3 @@
+.projectTitle {
+    @apply text-[#1d71d7] underline mb-2 text-lg font-bold;
+}
