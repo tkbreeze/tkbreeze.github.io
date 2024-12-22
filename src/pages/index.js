@@ -85,7 +85,7 @@ const IndexPage = () => {
             <div className="projectTitle">Amazon Connectブログ作成</div>
             <div>
               制作時期: 2023年<br />
-              Alleeks株式会社での長期インターンシップ中に、業務で使用していたAmazon Connectに関する技術情報をまとめたブログを二名で作成しました。プロジェクトリーダーとして、タスクの管理やスケジューリングなども担当しました。フレームワークとしてはVue.jsを使用し、ORMとしてPrismaを使用しました。また、マークダウン形式での投稿機能を実装し、ブログ記事を簡単に作成できるようにしました。<br />
+              Alleeks株式会社での長期インターンシップ中に、インターンシップの業務で使用していたAmazon Connectに関する技術情報をまとめたブログを二名で作成しました。プロジェクトリーダーとして、タスクの管理やスケジューリングなども担当しました。フロントエンドではVue.jsを使用し、バックエンドではNode.jsとPrisma ORMを活用してAPIを構築しました。また、マークダウン形式での投稿機能を実装し、ブログ記事を簡単に作成できるようにしました。<br />
               Link: <a href="https://www.alleeks.com/acblog" className="text-blue-600 visited:text-purple-600">https://www.alleeks.com/acblog</a>
             </div>
           </div>
