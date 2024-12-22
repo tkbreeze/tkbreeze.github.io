@@ -2,14 +2,17 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import GitHubIcon from "../components/GitHubIcon"
 import "../styles/index.css"
+import { Link } from "gatsby"
 
 const IndexPage = () => {
   return (
     <main className="bg-sky-50 p-5">
       <div className="border border-blue-500 p-2 inline-block text-4xl mb-2">
-        <span className="text-blue-500 font-bold">Takuto Fukushima</span>
-        <span className="mx-2 text-blue-500">|</span>
-        <span className="text-blue-500 font-bold">福島 拓斗</span>
+        <Link to="/">
+          <span className="text-blue-500 font-bold">Takuto Fukushima</span>
+          <span className="mx-2 text-blue-500">|</span>
+          <span className="text-blue-500 font-bold">福島 拓斗</span>
+        </Link>
       </div>
       <div className="container mb-2">
         明治大学大学院 理工学研究科 情報科学専攻 博士前期課程1年
