@@ -4,6 +4,12 @@ import GitHubIcon from "../components/GitHubIcon"
 import "../styles/index.css"
 import { Link } from "gatsby"
 
+const ProjectItem = ({ children }) => (
+  <div className="flex items-center flex-row mb-4 gap-4">
+    {children}
+  </div>
+)
+
 const IndexPage = () => {
   return (
     <main className="bg-sky-50 p-5">
@@ -43,8 +49,8 @@ const IndexPage = () => {
         </ul>
       </div>
       <div className="container mb-2">
-        <h1 className="text-4xl font-bold">Projects</h1>
-        <div className="flex items-center flex-row mt-1 gap-4">
+        <h1 className="text-4xl font-bold mb-1">Projects</h1>
+        <ProjectItem>
           <div className="basis-1/4">
             <StaticImage src="../images/game.png" alt="game" />
           </div>
@@ -57,8 +63,8 @@ const IndexPage = () => {
               Link: <a href="https://sharemygame.com/@tkbreeze/ice-planet-mission" className="text-blue-600 visited:text-purple-600">https://sharemygame.com/@tkbreeze/ice-planet-mission</a>
             </div>
           </div>
-        </div>
-        <div className="flex items-center flex-row mt-4 gap-4">
+        </ProjectItem>
+        <ProjectItem>
           <div className="basis-3/5">
             <div className="projectTitle">ゲームレビュー投稿サイト</div>
             <div>
@@ -70,8 +76,8 @@ const IndexPage = () => {
           <div className="basis-2/5">
             <StaticImage src="../images/game_review.png" alt="game_review" />
           </div>
-        </div>
-        <div className="flex items-center flex-row mt-4 gap-4">
+        </ProjectItem>
+        <ProjectItem>
           <div className="basis-1/5">
             <StaticImage src="../images/amazon_connect.png" alt="amazon_connect" />
           </div>
@@ -83,8 +89,8 @@ const IndexPage = () => {
               Link: <a href="https://www.alleeks.com/acblog" className="text-blue-600 visited:text-purple-600">https://www.alleeks.com/acblog</a>
             </div>
           </div>
-        </div>
-        <div className="flex items-center flex-row mt-4 gap-4">
+        </ProjectItem>
+        <ProjectItem>
           <div className="basis-3/4">
             <div className="projectTitle">Motor Imagery Classification(運動想起分類)の精度向上</div>
             <div>
@@ -98,24 +104,22 @@ const IndexPage = () => {
           <div className="basis-1/4">
             <StaticImage src="../images/poster_a4.png" alt="poster" />
           </div>
-        </div>
-        <div className="flex items-center flex-row mt-4 gap-4">
-            <div className="basis-1/4">
-              <StaticImage src="../images/spic.webp" alt="spic" />
-            </div>
-            <div className="basis-3/4">
-              <div className="projectTitle">株式会社スピック 社内システム開発</div>
-              <div>
-                時期: 2023年 - Current<br />
-                株式会社スピックの社内システム開発を行っています。
-              </div>
+        </ProjectItem>
+        <ProjectItem>
+          <div className="basis-1/4">
+            <StaticImage src="../images/spic.webp" alt="spic" />
           </div>
-        </div>
+          <div className="basis-3/4">
+            <div className="projectTitle">株式会社スピック 社内システム開発</div>
+            <div>
+              時期: 2023年 - Current<br />
+              株式会社スピックの社内システム開発を行っています。
+            </div>
+          </div>
+        </ProjectItem>
       </div>
     </main>
   )
 }
 
 export default IndexPage
-
-export const Head = () => <title>Home Page</title>
