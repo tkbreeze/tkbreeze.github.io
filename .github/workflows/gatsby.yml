@@ -78,6 +78,11 @@ jobs:
       - name: Create .env file
         run: |
           echo "${{ secrets.DOTENV }}" > .env.production
+      - name: Show .env file
+        run: |
+          echo '----------------------------------'
+          cat .env.production
+          echo '----------------------------------'
       - name: Build with Gatsby
         env:
           PREFIX_PATHS: 'true'
