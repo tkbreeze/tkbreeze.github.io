@@ -8,7 +8,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `tkbreeze.github.io`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://tkbreeze.github.io`,
   },
   plugins: [
     "gatsby-plugin-postcss", 
