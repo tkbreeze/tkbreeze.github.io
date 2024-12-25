@@ -77,7 +77,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Create .env file
         run: |
-          echo "${{ secrets.DOTENV }}" > $GITHUB_WORKSPACE/.env.production
+          echo "${{ secrets.DOTENV }}" > .env.production
       - name: Build with Gatsby
         env:
           PREFIX_PATHS: 'true'
