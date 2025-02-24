@@ -35,7 +35,7 @@ const IndexPage = () => {
         <h1 className="text-4xl font-bold">Work Experience</h1>
         <ul className="list-disc pl-5 mt-1">
           <li>
-            Alleeks株式会社, Frontend & Backend Engineer, 2022/01 - 2023/04
+            Alleeks株式会社, Frontend & Backend Engineer, 2022/01 - 2023/05
           </li>
           <li>
             株式会社スピック, 社内SE, 2023/05 - Current
