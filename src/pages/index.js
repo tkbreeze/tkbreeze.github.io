@@ -21,7 +21,7 @@ const IndexPage = () => {
         </Link>
       </div>
       <div className="container mb-2">
-        明治大学大学院 理工学研究科 情報科学専攻 博士前期課程1年 <GitHubIcon url="https://github.com/tkbreeze" />
+        明治大学大学院 理工学研究科 情報科学専攻 博士前期課程2年 <GitHubIcon url="https://github.com/tkbreeze" />
       </div>
       <div className="container mb-2">
         <h1 className="text-4xl font-bold">Publications</h1>
